@@ -1,7 +1,6 @@
-{-# LANGUAGE TypeFamilies, QuasiQuotes, MultiParamTypeClasses, TemplateHaskell, OverloadedStrings #-}
+{-# LANGUAGE OverloadedStrings #-}
 
 import Database.Persist.MongoDB
-
 import Model
 
 main = withMongoDBConn dbname hostname $ runMongoDBConn master $ do

@@ -1,4 +1,4 @@
-{-# LANGUAGE TypeFamilies, QuasiQuotes, MultiParamTypeClasses, TemplateHaskell, OverloadedStrings #-}
+{-# LANGUAGE OverloadedStrings #-}
 
 import Database.Persist.Sqlite
 
@@ -10,6 +10,7 @@ main = withSqliteConn path $ runSqlConn $ do
     userEmail = "hoge@hoge.jp",
     userPassword = Just "hoge"
   }
+  insert $ User "aa@bb.vv" (Just "aaa")
   return ()
  where
   path = "hogesql.sqlite3"

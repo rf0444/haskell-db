@@ -1,4 +1,4 @@
-{-# LANGUAGE TypeFamilies, QuasiQuotes, MultiParamTypeClasses, TemplateHaskell, OverloadedStrings, FlexibleContexts, GADTs #-}
+{-# LANGUAGE TypeFamilies, TemplateHaskell, FlexibleContexts, GADTs #-}
 module Model where
 
 import Data.Text (Text)
