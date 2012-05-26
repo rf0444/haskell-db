@@ -1,0 +1,5 @@
+User
+    email Text
+    password Text Maybe
+    UniqueUser email
+
